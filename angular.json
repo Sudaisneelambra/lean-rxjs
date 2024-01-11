@@ -69,7 +69,7 @@
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "builder": "@angular-devkit/build-angular:extract-i18n",  
           "options": {
             "browserTarget": "section2:build"
           }
@@ -94,5 +94,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "75be89ad-97b8-45a2-abbb-9648d6c880d5"
   }
 }
