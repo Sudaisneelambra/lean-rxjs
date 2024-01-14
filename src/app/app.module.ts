@@ -5,10 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChildComponent } from './parent/child/child.component';
 import { ParentComponent } from './parent/parent.component';
+import { AshanComponent } from './parent/ashan/ashan.component';
 
 @NgModule({
   declarations: [
-    AppComponent,ChildComponent,ParentComponent
+    AppComponent,ChildComponent,ParentComponent,AshanComponent
   ],
   imports: [
     BrowserModule,

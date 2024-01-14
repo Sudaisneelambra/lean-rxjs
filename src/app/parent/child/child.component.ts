@@ -1,13 +1,13 @@
-import { Component, ElementRef, Input, ViewChild ,Output,EventEmitter, AfterViewInit} from "@angular/core";
-
+import { Component, ElementRef,OnDestroy, Input, ViewChild ,Output,EventEmitter, AfterViewInit,OnInit, AfterContentChecked, AfterContentInit, ContentChild} from "@angular/core";
+import { Observable,Subscription,interval } from "rxjs";
 @Component({
     selector:'app-child',
     templateUrl:'./child.component.html',
     styleUrls:['./child.component.css']
 })
 
-export class ChildComponent {
-
+export class ChildComponent{
+      
     // lockal reference
             // method 1
                 // data:any
@@ -57,7 +57,28 @@ export class ChildComponent {
                 //     console.log(this.value.nativeElement.innerText);
                 //     this.value.nativeElement.innerText=this.str 
                 // }
-
+                
+            
     // template to class data transfer using @viewCild
+
+    // observable
+                       
+            // private intervalSubscription: Subscription | undefined;
+
+            // ngOnInit(){
+            //     this.intervalSubscription=interval(1000).subscribe(count=>{
+            //         console.log(count);
+                    
+            //     })
+            // }
+
+          
+          
+   
+
+    // observable
+
+  
     
+      
 }

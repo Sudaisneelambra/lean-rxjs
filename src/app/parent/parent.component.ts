@@ -1,4 +1,5 @@
-import { Component } from "@angular/core";
+import { Component, ViewChild } from "@angular/core";
+import { AshanComponent } from "./ashan/ashan.component";
 
 @Component ({
     selector:'app-parent',
@@ -36,6 +37,6 @@ export class ParentComponent {
                 // }
     // Eventemiter @output 
 
-
+  
 
 }
