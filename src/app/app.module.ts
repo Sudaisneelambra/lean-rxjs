@@ -8,6 +8,7 @@ import { ParentComponent } from './parent/parent.component';
 import { AshanComponent } from './parent/ashan/ashan.component';
 import { SubjectComponent } from './subject/subject.component';
 import { RXJSoperatorsComponent } from './rxjsoperators/rxjsoperators.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { RXJSoperatorsComponent } from './rxjsoperators/rxjsoperators.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,7 @@
 import { Component,OnInit } from '@angular/core';
-import { forkJoin, of } from 'rxjs';
-import { filter, map, mergeMap } from 'rxjs/operators';
+import { Observable, forkJoin, fromEvent, of } from 'rxjs';
+import { catchError, filter, map, mergeMap, switchMap } from 'rxjs/operators';
+import {HttpClient} from '@angular/common/http'
 
 @Component({
   selector: 'app-rxjsoperators',
@@ -69,31 +70,72 @@ export class RXJSoperatorsComponent {
 
     // -----------------------------------forkJoin--------------------------------------------------------------------
 
-            array=of('hellow')
-            array1=of('shaheer')
+          //   array=of('hellow')
+          //   array1=of('shaheer')
           
 
-            ngOnInit(){
-           forkJoin([
-            this.array,
-            this.array1
-          ]).subscribe({
-            next:(e)=>{
-              console.log(e);
+          //   ngOnInit(){
+          //  forkJoin([
+          //   this.array,
+          //   this.array1
+          // ]).subscribe({
+          //   next:(e)=>{
+          //     console.log(e);
               
               
-            },
-            error:(e)=>{
-              console.log(e.message)
+          //   },
+          //   error:(e)=>{
+          //     console.log(e.message)
               
-             }
-           })
+          //    }
+          //  })
            
 
-            }
+          //   }
 
 
   // -----------------------------------forlJoin--------------------------------------------------------------------
+
+
+
+  // -----------------------------------------switchMap-----------------------------------------------------------
+  // data: any;
+  // error: string;
+
+  // constructor(private http: HttpClient) {}
+
+  // loadData() {
+  //   this.getData().subscribe(
+  //     (result) => {
+  //       this.data = result;
+  //       this.error = null;
+  //       console.log(result);
+        
+  //     },
+  //     (err) => {
+  //       this.data = null;
+  //       this.error = 'Failed to load data.';
+  //     }
+  //   );
+  // }
+
+  // getData(): Observable<any> {
+  //   const apiUrl = 'https://jsonplaceholder.org/users';
+
+  //   return of(apiUrl).pipe(
+  //     switchMap((url) => this.http.get(url)),
+  //     catchError((error) => {
+  //       console.error('Error:', error);
+  //       return of(null); // Return an observable with a default value on error
+  //     })
+  //   );
+  // }
+
+  
+
+
+  // -----------------------------------------switchMap-----------------------------------------------------------
+
 
 
 
