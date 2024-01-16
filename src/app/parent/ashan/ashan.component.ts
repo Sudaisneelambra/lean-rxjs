@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit } from '@angular/core';
-import { observable } from 'rxjs';
+import { BehaviorSubject, observable, of } from 'rxjs';
 import { Observable } from 'rxjs-compat';
 
 @Component({
@@ -68,30 +68,68 @@ export class AshanComponent {
 
 //-------------------------------------------------------Event Emitter------------------------------------------------------------------
 
-time = new EventEmitter<string>();
+// time = new EventEmitter<string>();
 
-  currentGlobalVari: any;
+//   currentGlobalVari: any;
 
-  nextVariable: any;
+//   nextVariable: any;
 
-  ngOnInit() {
-    setInterval(() => this.time.emit(new Date().toString()), 500)
+//   ngOnInit() {
+//     setInterval(() => this.time.emit(new Date().toString()), 500)
 
-    this.time.subscribe({
-      next: (data: string) => {
-        this.currentGlobalVari = data;
-      },
-      error: (err: any) => {
-        console.log(err);
-      },
-    });
+//     this.time.subscribe({
+//       next: (data: string) => {
+//         this.currentGlobalVari = data;
+//       },
+//       error: (err: any) => {
+//         console.log(err);
+//       },
+//     });
 
-    this.time.subscribe((data) => {
-      this.nextVariable = data;
-    });
-  }
+//     this.time.subscribe((data) => {
+//       this.nextVariable = data;
+//     });
+//   }
 
 
 //-------------------------------------------------------Event Emitter------------------------------------------------------------------
+
+// -------------------------------------------------behaviour SUbject-----------------------------------------------------------------
+
+      // myBehaviorSubject = new BehaviorSubject<number>(0);
+
+      // ngOnInit(){
+      //   this.myBehaviorSubject.subscribe((value)=>{
+      //     console.log(value);
+          
+      //   })
+      //   this.myBehaviorSubject.next(2)
+      //   this.myBehaviorSubject.next(4)
+
+      //   this.myBehaviorSubject.next(8)
+
+      // }
+
+// -------------------------------------------------behaviour SUbject-----------------------------------------------------------------
+
+//  -------------------------------------------------creating of -------------------------------------------------------------
+
+        // data=of(2,3,4,5,6,7,8,9,10)
+
+        // ngOnInit(){
+        //   this.data.subscribe({
+        //     next:(val)=>{
+        //       console.log(val);
+        //     },
+        //     error:(err)=>{
+        //       console.log(err);
+              
+        //     }
+        //   })
+        // }
+
+
+//  -------------------------------------------------creating of -------------------------------------------------------------
+
 
 }
