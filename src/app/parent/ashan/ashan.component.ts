@@ -1,6 +1,7 @@
 import { Component, EventEmitter, OnInit } from '@angular/core';
-import { BehaviorSubject, observable, of } from 'rxjs';
+import { BehaviorSubject, from, interval, observable, of } from 'rxjs';
 import { Observable } from 'rxjs-compat';
+import { delayWhen } from 'rxjs/operators';
 
 @Component({
   selector: 'app-ashan',
@@ -130,6 +131,68 @@ export class AshanComponent {
 
 
 //  -------------------------------------------------creating of -------------------------------------------------------------
+
+//  -------------------------------------------------creating of with setinterwell-------------------------------------------------------------
+
+        // data=from(['a','b','c','r','h'])
+
+        // ngOnInit() {
+        //  this.data.pipe(
+        //  //  delay(1000)
+        //  delayWhen(() => interval(Math.random() * 5000))
+        //  ).subscribe({
+        //    next: (val) => {
+        //      console.log(val);
+        //    },
+        //    error: (err) => {
+        //      console.log(err);
+        //    },
+        //  });
+        // }
+
+//  -------------------------------------------------creating of with setinterwell-------------------------------------------------------------
+
+//  -------------------------------------------------creating from -------------------------------------------------------------
+
+      //  data=from(['a','b','c','r','h'])
+
+      //  ngOnInit(){
+      //   this.data.subscribe({
+      //     next:(val)=>{
+      //       console.log(val); 
+      //     },
+      //     error(err) {
+      //         console.log(err);
+              
+      //     },
+      //   })
+      //  }
+
+
+//  -------------------------------------------------creating from -------------------------------------------------------------
+
+
+//  -------------------------------------------------creating intervel -------------------------------------------------------------
+
+
+    // data=interval(2000)
+
+    // ngOnInit(){
+    //   this.data.subscribe({
+    //     next:(val)=>{
+    //       console.log(val);
+          
+    //     },
+    //     error(err) {
+    //         console.log(err);
+            
+    //     },
+    //   })
+    // }
+
+
+//  -------------------------------------------------creating intervel -------------------------------------------------------------
+
 
 
 }

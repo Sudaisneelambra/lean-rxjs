@@ -7,10 +7,11 @@ import { ChildComponent } from './parent/child/child.component';
 import { ParentComponent } from './parent/parent.component';
 import { AshanComponent } from './parent/ashan/ashan.component';
 import { SubjectComponent } from './subject/subject.component';
+import { RXJSoperatorsComponent } from './rxjsoperators/rxjsoperators.component';
 
 @NgModule({
   declarations: [
-    AppComponent,ChildComponent,ParentComponent,AshanComponent, SubjectComponent
+    AppComponent,ChildComponent,ParentComponent,AshanComponent, SubjectComponent, RXJSoperatorsComponent
   ],
   imports: [
     BrowserModule,
