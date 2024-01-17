@@ -10,7 +10,8 @@ import { SubjectComponent } from './subject/subject.component';
 import { RXJSoperatorsComponent } from './rxjsoperators/rxjsoperators.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ServiceComponent } from './service/service.component';
-import { RountModule } from './created.rounting.module';
+import { RountModule } from './created.routing.module';
+import { Queryroutes } from './queryparams.routing.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { RountModule } from './created.rounting.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    RountModule
+    // RountModule,
+    Queryroutes
   ],
   providers: [
   ],

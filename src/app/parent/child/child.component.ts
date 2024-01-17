@@ -1,4 +1,5 @@
 import { Component, ElementRef,OnDestroy, Input, ViewChild ,Output,EventEmitter, AfterViewInit,OnInit, AfterContentChecked, AfterContentInit, ContentChild} from "@angular/core";
+import { Router } from "@angular/router";
 import { Observable,Subscription,interval } from "rxjs";
 @Component({
     selector:'app-child',
@@ -8,6 +9,10 @@ import { Observable,Subscription,interval } from "rxjs";
 
 export class ChildComponent{
       
+
+    constructor(private rout:Router){
+
+    }
     // lockal reference
             // method 1
                 // data:any
@@ -78,7 +83,19 @@ export class ChildComponent{
 
     // observable
 
-  
+// //   ---------------------------------------------query params-----------------------------------------------
+//     quryparams(val:number){
+//         this.rout.navigate(['/child',val])
+//     }
+
+//     ngOnInit(){
+        
+//     }
+
+// //   ---------------------------------------------query params-----------------------------------------------
+
+
+    
     
       
 }

@@ -4,6 +4,7 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './parent/child/child.component';
 import { RXJSoperatorsComponent } from './rxjsoperators/rxjsoperators.component';
 import { AshanComponent } from './parent/ashan/ashan.component';
+import { ServiceComponent } from './service/service.component';
 
 const routes: Routes = [
   { path: '',title:'child componet title', component: ChildComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
     ]
   },
   { path: 'rx', component: RXJSoperatorsComponent },
+  { path: '**', component: ServiceComponent },
 ];
 
 @NgModule({

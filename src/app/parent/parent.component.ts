@@ -1,5 +1,6 @@
-import { Component, ViewChild } from "@angular/core";
+import { Component, ViewChild ,OnInit} from "@angular/core";
 import { AshanComponent } from "./ashan/ashan.component";
+import { ActivatedRoute } from "@angular/router";
 
 @Component ({
     selector:'app-parent',
@@ -38,5 +39,58 @@ export class ParentComponent {
     // Eventemiter @output 
 
   
+
+//// ------------------- getting query params-------------------------------------------
+
+
+    // constructor(private rout:ActivatedRoute){
+
+    // }
+    // sin:number
+    // productId:number
+    // ngOnInit(){
+    //         this.rout.queryParams.subscribe((val)=>{
+    //             console.log(val);
+                
+    //             this.productId= +val['key']
+    //         })
+
+
+    // // -------------------this is the another method of getting query params-------------------------------------------
+    
+    // this.sin=this.rout.snapshot.params['key']
+    // }
+    
+   // // ------------------- getting query params-------------------------------------------
+
+
+
+
+// // -------------------getting  params-------------------------------------------
+
+
+//     constructor(private rout:ActivatedRoute){
+
+//     }
+//     sin:number
+//     productId:number
+//     ngOnInit(){
+//             this.rout.params.subscribe((val)=>{
+//                 console.log(val);
+                
+//                 this.productId= +val['id']
+//                 console.log(this.productId);
+                
+//             })
+
+// // -------------------this is the another method of getting  params-------------------------------------------
+
+//             this.sin=this.rout.snapshot.params['id']
+//     }
+
+// // ------------------- getting  params-------------------------------------------
+
+
+    
 
 }
