@@ -10,6 +10,7 @@ import { SubjectComponent } from './subject/subject.component';
 import { RXJSoperatorsComponent } from './rxjsoperators/rxjsoperators.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ServiceComponent } from './service/service.component';
+import { RountModule } from './created.rounting.module';
 
 @NgModule({
   declarations: [
@@ -18,10 +19,10 @@ import { ServiceComponent } from './service/service.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RountModule
   ],
   providers: [
-    // myservice
   ],
   bootstrap: [AppComponent]
 })
