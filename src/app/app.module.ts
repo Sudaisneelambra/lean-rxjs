@@ -9,17 +9,20 @@ import { AshanComponent } from './parent/ashan/ashan.component';
 import { SubjectComponent } from './subject/subject.component';
 import { RXJSoperatorsComponent } from './rxjsoperators/rxjsoperators.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ServiceComponent } from './service/service.component';
 
 @NgModule({
   declarations: [
-    AppComponent,ChildComponent,ParentComponent,AshanComponent, SubjectComponent, RXJSoperatorsComponent
+    AppComponent,ChildComponent,ParentComponent,AshanComponent, SubjectComponent, RXJSoperatorsComponent, ServiceComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    // myservice
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
