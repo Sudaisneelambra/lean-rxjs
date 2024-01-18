@@ -6,11 +6,14 @@ import { ChildComponent } from "./parent/child/child.component";
 const routes:Routes=[
     {
         path:'home',
-        component:ChildComponent
+        component:ChildComponent,
+        title:"child component",
     },
     {
         path:'child/:id',
-        component:ParentComponent
+        component:ParentComponent,
+        title:"parent component"
+
     },
 ]
 @NgModule({

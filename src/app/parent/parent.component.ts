@@ -40,7 +40,43 @@ export class ParentComponent {
 
   
 
-//// ------------------- getting query params-------------------------------------------
+// // ------------------- getting query params-------------------------------------------
+
+
+    // constructor(private rout:ActivatedRoute){
+
+    // }
+    // sin:number
+    // productId:number
+    // title:string
+    // ngOnInit(){
+    //         this.rout.queryParams.subscribe((val)=>{
+    //             console.log(val);
+                
+    //             this.productId= +val['id']
+    //         })
+
+    // // getting properties from routes using activated route
+
+    //         this.rout.title.subscribe((tit)=>{
+    //             console.log(tit);
+    //             this.title=tit
+                
+    //         })
+
+
+    // // -------------------this is the another method of getting query params-------------------------------------------
+    
+    // this.sin=this.rout.snapshot.params['id']
+    // this.productId=this.sin
+    // }
+    
+//    // ------------------- getting query params-------------------------------------------
+
+
+
+
+// // -------------------getting  params-------------------------------------------
 
 
     // constructor(private rout:ActivatedRoute){
@@ -49,44 +85,18 @@ export class ParentComponent {
     // sin:number
     // productId:number
     // ngOnInit(){
-    //         this.rout.queryParams.subscribe((val)=>{
+    //         this.rout.params.subscribe((val)=>{
     //             console.log(val);
                 
-    //             this.productId= +val['key']
+    //             this.productId= +val['id']
+    //             console.log(this.productId);
+                
     //         })
 
+// -------------------this is the another method of getting  params-------------------------------------------
 
-    // // -------------------this is the another method of getting query params-------------------------------------------
-    
-    // this.sin=this.rout.snapshot.params['key']
+    //         this.sin=this.rout.snapshot.params['id']
     // }
-    
-   // // ------------------- getting query params-------------------------------------------
-
-
-
-
-// // -------------------getting  params-------------------------------------------
-
-
-//     constructor(private rout:ActivatedRoute){
-
-//     }
-//     sin:number
-//     productId:number
-//     ngOnInit(){
-//             this.rout.params.subscribe((val)=>{
-//                 console.log(val);
-                
-//                 this.productId= +val['id']
-//                 console.log(this.productId);
-                
-//             })
-
-// // -------------------this is the another method of getting  params-------------------------------------------
-
-//             this.sin=this.rout.snapshot.params['id']
-//     }
 
 // // ------------------- getting  params-------------------------------------------
 
