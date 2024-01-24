@@ -84,13 +84,13 @@ export class ChildComponent{
     // observable
 
 // //   ---------------------------------------------query params-----------------------------------------------
-    quryparams(val:number){
-        this.rout.navigate(['/child',val])
-    }
+    // quryparams(val:number){
+    //     this.rout.navigate(['/child',val])
+    // }
 
-    ngOnInit(){
+    // ngOnInit(){
         
-    }
+    // }
 
 // //   ---------------------------------------------query params-----------------------------------------------
 
